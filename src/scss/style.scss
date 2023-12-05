@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Onest";
+  src: url(../assets/fonts/onest-v6-latin-regular.woff2);
+}
+
+@font-face {
+  font-family: "OnestMedium";
+  src: url(../assets/fonts/onest-v6-latin-500.woff2);
+}
+
+@font-face {
+  font-family: "OnestBold";
+  src: url(../assets/fonts/onest-v6-latin-700.woff2);
+}
+
+@font-face {
+  font-family: "Intro";
+  src: url(../assets/fonts/IntroDemoBlackCaps.otf);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
