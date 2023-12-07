@@ -11,44 +11,118 @@
 
 <body>
 
-    <header class="header">
-        <section class="container">
-            <nav class="header-menu">
-                <ul class="header-menu-items">
-                    <li class="header-menu-item">
-                        <a href="#products">Продукция</a>
-                    </li>
-                    <li class="header-menu-item">
-                        <a href="#about">О нас</a>
-                    </li>
-                    <li class="header-menu-item">
-                        <a href="#">
+    <section class="wrapper">
+        <header class="header">
+            <section class="container">
+                <nav class="header-menu">
+                    <ul class="header-menu-items">
+                        <li class="header-menu-item">
+                            <a href="#products">Продукция</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="#about">О нас</a>
+                        </li>
+                        <li class="header-menu-item logo">
                             <img src="./src/assets/images/logo.png" alt="Logo">
-                        </a>
-                    </li>
-                    <li class="header-menu-item">
-                        <a href="#clients">Где купить</a>
-                    </li>
-                    <li class="header-menu-item">
-                        <a href="#contacts">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="#clients">Где купить</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="#contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+
+        <section class="products" id="products">
+            <section class="container">
+                <section class="products-slider">
+                    <ul class="products-slider__items">
+                        <li class="products-slider__item">
+                            <div class="products-slider__item-info">
+                                <h2 class="products-slider__item-title">Молоко</h2>
+                                <p class="products-slider__item-text">Вкусное и натуральное</p>
+                                <button class="products-slider__item-btn button">Узнать подробнее</button>
+                            </div>
+                            <div class="products-slider__item-img">
+                                <img src="./src/assets/images/products-slider/milk.png" alt="Молоко">
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="arrow-btn arrow-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                            <circle cx="28" cy="28" r="27.5" transform="matrix(-1 0 0 1 56 0)" fill="#DE3A38"
+                                stroke="#D9D9D9" />
+                            <path d="M33 39L19 28.5L33 18" stroke="white" stroke-width="3" />
+                        </svg>
+                    </button>
+                    <button class="arrow-btn arrow-right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                            <circle cx="28" cy="28" r="27.5" fill="#DE3A38" stroke="#D9D9D9" />
+                            <path d="M23 39L37 28.5L23 18" stroke="white" stroke-width="3" />
+                        </svg>
+                    </button>
+                </section>
+
+                <section class="products-list">
+                    <ul class="products-list__items">
+                        <li class="products-list__item active">
+                            <img src="./src/assets/images/prodicts-list/milk.png" alt="молоко">
+                            <p>молоко</p>
+                        </li>
+                        <li class="products-list__item">
+                            <img src="./src/assets/images/prodicts-list/sourcream.png" alt="сметана">
+                            <p>сметана</p>
+                        </li>
+                        <li class="products-list__item">
+                            <img src="./src/assets/images/prodicts-list/cottage.png" alt="творог">
+                            <p>творог</p>
+                        </li>
+                        <li class="products-list__item">
+                            <img src="./src/assets/images/prodicts-list/kefir.png" alt="кефир">
+                            <p>кефир</p>
+                        </li>
+                        <li class="products-list__item">
+                            <img src="./src/assets/images/prodicts-list/yogurt.png" alt="йогурт">
+                            <p>йогурт</p>
+                        </li>
+                        <li class="products-list__item">
+                            <img src="./src/assets/images/prodicts-list/cream.png" alt="сливки">
+                            <p>сливки</p>
+                        </li>
+                        <li class="products-list__item small">
+                            <img src="./src/assets/images/prodicts-list/milk-beverages.png" alt="кисломолочные напитки">
+                            <p>кисломолочные напитки</p>
+                        </li>
+                    </ul>
+                </section>
+            </section>
         </section>
-    </header>
+
+    </section>
 
     <main class="main">
-        <section class="container">
 
-            <section class="products" id="products"></section>
+        <section class="about" id="about">
+            <section class="container">
 
-            <section class="about" id="about"></section>
-
-            <section class="clients" id="clients"></section>
-
-            <section class="contacts" id="contacts"></section>
-
+            </section>
         </section>
+
+        <section class="clients" id="clients">
+            <section class="container">
+
+            </section>
+        </section>
+
+        <section class="contacts" id="contacts">
+            <section class="container">
+
+            </section>
+        </section>
+
     </main>
 
     <footer class="footer">
