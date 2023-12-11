@@ -18,6 +18,11 @@
   src: url("../assets/fonts/IntroCondBlackFree.otf");
 }
 
+@font-face {
+  font-family: IntroLight;
+  src: url("../assets/fonts/IntroCondLightFree.otf");
+}
+
 *,
 *::after,
 *::before {
@@ -29,9 +34,10 @@
 
 body {
   min-height: 100vh;
+  scroll-behavior: smooth;
   display: grid;
   grid-template-columns: minmax(320px, 1920px);
-  grid-template-rows: 1200px auto 80px;
+  grid-template-rows: 1200px auto 850px;
   justify-content: center;
 }
 
@@ -68,7 +74,7 @@ ul {
   font-size: 18px;
 }
 
-.wrapper {
+.wrapper-header {
   border-radius: 0px 0px 100px 100px;
   background-color: #fcfaf9;
   background-image: url("../assets/images/bg.png");
@@ -248,7 +254,170 @@ ul {
 
 .main {
   .about {
-    padding-top: 206px 0 285px 0;
-    background: url("../assets/images/bg-milk.png") no-repeat;
+    background-color: #fff;
+    background-image: url("../assets/images/bg-milk.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 206px 0 285px 0;
+
+    .container {
+      display: flex;
+      gap: 80px;
+
+      .about-title {
+        color: #000;
+        font-family: Intro, sans-serif;
+        font-size: 65px;
+        font-weight: 900;
+        letter-spacing: 1.3px;
+        text-transform: uppercase;
+        width: 220px;
+
+        span {
+          font-family: IntroLight, sans-serif;
+          font-size: 40px;
+          font-weight: 300;
+          letter-spacing: 0.8px;
+        }
+      }
+
+      .about-advantages {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        .advantages-items {
+          display: flex;
+          justify-content: space-between;
+          flex-grow: 1;
+
+          .advantages-item {
+            width: 190px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+            .advantages-item-number {
+              color: #ff6c0e;
+              font-family: Intro, sans-serif;
+              font-size: 65px;
+              font-weight: 900;
+              text-transform: uppercase;
+
+              span {
+                display: inline-block;
+                transform: rotate(45deg);
+                font-size: xx-large;
+                position: relative;
+                top: -11px;
+                left: -11px;
+              }
+            }
+
+            .advantages-item-text {
+              color: #ff6c0e;
+              font-family: Intro, sans-serif;
+              font-size: 26px;
+              font-weight: 900;
+              text-transform: uppercase;
+            }
+
+            .advantages-item-description {
+              color: #000;
+              text-align: center;
+              font-family: OnestBold, sans-serif;
+              font-size: 18px;
+              font-weight: 700;
+              line-height: 1.4;
+
+              span {
+                white-space: pre;
+              }
+            }
+          }
+        }
+
+        .advantages-mission {
+          max-width: 780px;
+          color: #000;
+          font-family: Onest, sans-serif;
+          font-size: 22px;
+          line-height: 1.4;
+        }
+      }
+    }
+  }
+
+  .clients {
+    background: #fcfaf9;
+    padding: 142px 0 80px 0;
+
+    .clients-title {
+      color: #000;
+      font-family: Intro, sans-serif;
+      font-size: 65px;
+      font-weight: 900;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .clients-slider {
+      position: relative;
+
+      .clients-slider__items {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+
+      .arrow-btn {
+        position: absolute;
+        background: transparent;
+        top: calc(35% - 10px);
+      }
+      .arrow-left {
+        left: -60px;
+      }
+      .arrow-right {
+        right: -60px;
+      }
+    }
+  }
+}
+
+.wrapper-footer {
+  background-color: #fcfaf9;
+  background-image: url("../assets/images/bg-footer.png");
+
+  .contacts {
+    padding-top: 206px;
+
+    .container {
+      display: flex;
+      gap: 239px;
+
+      .contacts-info {
+        padding-top: 10px;
+
+        .info-title {
+          color: #000;
+          font-family: Intro, sans-serif;
+          font-size: 40px;
+          font-weight: 900;
+          text-transform: uppercase;
+        }
+
+        .info-address {
+        }
+      }
+
+      .contacts-review {
+        background: url("../assets/images/vector.png") no-repeat;
+        background-size: cover;
+      }
+    }
   }
 }

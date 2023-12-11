@@ -11,8 +11,8 @@
 
 <body>
 
-    <section class="wrapper">
-        <header class="header">
+    <section class="wrapper-header">
+        <header class="header" id="header">
             <section class="container">
                 <nav class="header-menu">
                     <ul class="header-menu-items">
@@ -100,36 +100,111 @@
                 </section>
             </section>
         </section>
-
     </section>
 
     <main class="main">
-
         <section class="about" id="about">
             <section class="container">
-
+                <h2 class="about-title">Факты <span>о нас</span></h2>
+                <section class="about-advantages">
+                    <ul class="advantages-items">
+                        <li class="advantages-item">
+                            <p class="advantages-item-number">40</p>
+                            <p class="advantages-item-text">лет</p>
+                            <p class="advantages-item-description">мы работаем с 1984 года</p>
+                        </li>
+                        <li class="advantages-item">
+                            <p class="advantages-item-number">500</p>
+                            <p class="advantages-item-text">тонн молока</p>
+                            <p class="advantages-item-description">перерабатывается <span>в сутки</span></p>
+                        </li>
+                        <li class="advantages-item">
+                            <p class="advantages-item-number">10 <span>&#10006;</span></p>
+                            <p class="advantages-item-text">наград</p>
+                            <p class="advantages-item-description">в номинации лучшие молочные продукты</p>
+                        </li>
+                    </ul>
+                    <p class="advantages-mission">
+                        Высокое качество для нас — дело чести! Поэтому вся наша продукция проходит многоступенчатый
+                        контроль качества от сырья до прилавка.
+                    </p>
+                </section>
             </section>
         </section>
 
         <section class="clients" id="clients">
             <section class="container">
-
+                <h2 class="clients-title">где купить?</h2>
+                <section class="clients-slider">
+                    <ul class="clients-slider__items">
+                        <li class="clients-slider__item">
+                            <img src="./src/assets/images/clients-slider/okey.png" alt="Окей">
+                        </li>
+                        <li class="clients-slider__item">
+                            <img src="./src/assets/images/clients-slider/perekrestok.png" alt="Перекресток">
+                        </li>
+                        <li class="clients-slider__item">
+                            <img src="./src/assets/images/clients-slider/auchan.png" alt="Ашан">
+                        </li>
+                        <li class="clients-slider__item">
+                            <img src="./src/assets/images/clients-slider/lenta.png" alt="Лента">
+                        </li>
+                        <li class="clients-slider__item">
+                            <img src="./src/assets/images/clients-slider/slata.png" alt="Слата">
+                        </li>
+                    </ul>
+                    <button class="arrow-btn arrow-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                            <circle cx="28" cy="28" r="27.5" transform="matrix(-1 0 0 1 56 0)" fill="#DE3A38"
+                                stroke="#D9D9D9" />
+                            <path d="M33 39L19 28.5L33 18" stroke="white" stroke-width="3" />
+                        </svg>
+                    </button>
+                    <button class="arrow-btn arrow-right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                            <circle cx="28" cy="28" r="27.5" fill="#DE3A38" stroke="#D9D9D9" />
+                            <path d="M23 39L37 28.5L23 18" stroke="white" stroke-width="3" />
+                        </svg>
+                    </button>
+                </section>
             </section>
         </section>
-
-        <section class="contacts" id="contacts">
-            <section class="container">
-
-            </section>
-        </section>
-
     </main>
 
-    <footer class="footer">
-        <section class="container">
-
+    <section class="wrapper-footer">
+        <section class="contacts" id="contacts">
+            <section class="container">
+                <section class="contacts-info">
+                    <h2 class="info-title">Контакты</h2>
+                    <div class="info-address">
+                        <p>Адрес производства:</p>
+                        <p>396650, Воронежская область, г. Россошь, ул. Л. Толстого 53</p>
+                    </div>
+                    <div class="info-phone">+7(47396) 2-07-92</div>
+                </section>
+                <section class="contacts-review">
+                    <div class="review-text">
+                        Мы будем благодарны, если вы оставите отзыв:
+                    </div>
+                    <div class="review-email">info@rosmoloko.com</div>
+                    <button class="button review-button">Написать нам</button>
+                </section>
+            </section>
         </section>
-    </footer>
+
+        <footer class="footer">
+            <section class="container">
+                <section class="footer-actions">
+                    <a href="#header">на<span>верх</span></a>
+                    <img src="./src/assets/images/cow.png" alt="Корова">
+                </section>
+                <section class="footer-info">
+                    <p><span>&#169;</span> 2023 АО «Молоко»</p>
+                    <p>Дизайн Попова Ольга</p>
+                </section>
+            </section>
+        </footer>
+    </section>
 
 </body>
 
