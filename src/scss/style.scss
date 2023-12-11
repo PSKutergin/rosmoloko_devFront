@@ -391,13 +391,16 @@ ul {
 .wrapper-footer {
   background-color: #fcfaf9;
   background-image: url("../assets/images/bg-footer.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   .contacts {
     padding-top: 206px;
 
     .container {
       display: flex;
-      gap: 239px;
+      justify-content: space-between;
 
       .contacts-info {
         padding-top: 10px;
@@ -411,12 +414,109 @@ ul {
         }
 
         .info-address {
+          padding: 40px 0 30px 0;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          p {
+            color: #000;
+            font-family: Onest, sans-serif;
+            font-size: 18px;
+            line-height: 1.4;
+          }
+        }
+
+        .info-phone {
+          color: #000;
+          font-family: OnestBold, sans-serif;
+          font-size: 40px;
+          font-weight: 700;
         }
       }
 
       .contacts-review {
         background: url("../assets/images/vector.png") no-repeat;
         background-size: cover;
+        width: 408px;
+        height: 480px;
+        padding: 60px 71px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+
+        .review-text {
+          color: #000;
+          text-align: center;
+          font-family: Onest, sans-serif;
+          font-size: 22px;
+        }
+        .review-email {
+          color: #000;
+          font-family: OnestBold, sans-serif;
+          font-size: 22px;
+          font-weight: 700;
+          text-align: center;
+        }
+        .review-button {
+          background: #ff6c0e;
+        }
+      }
+    }
+  }
+
+  .footer {
+    padding-bottom: 34px;
+
+    .container {
+      position: relative;
+
+      .footer-actions {
+        position: absolute;
+        top: -145px;
+        left: calc(50% - 180px);
+        display: flex;
+
+        .footer-actions__to-up {
+          position: relative;
+
+          a {
+            color: #000;
+            font-family: IntroLight, sans-serif;
+            font-size: 30px;
+            text-transform: uppercase;
+            position: absolute;
+            top: 20%;
+            left: -33%;
+
+            span {
+              font-family: Intro, sans-serif;
+            }
+          }
+        }
+
+        .footer-actions__img {
+          width: 219px;
+          height: 188px;
+        }
+      }
+
+      .footer-info {
+        height: 38px;
+        display: flex;
+        justify-content: space-between;
+
+        p {
+          color: #000;
+          font-family: Onest, sans-serif;
+          font-size: 18px;
+          line-height: 1.4;
+
+          &:last-child {
+            align-self: flex-end;
+          }
+        }
       }
     }
   }
