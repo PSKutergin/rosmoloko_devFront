@@ -37,7 +37,7 @@ body {
   scroll-behavior: smooth;
   display: grid;
   grid-template-columns: minmax(320px, 1920px);
-  grid-template-rows: 1200px auto 850px;
+  grid-template-rows: auto auto 850px;
   justify-content: center;
 }
 
@@ -53,11 +53,6 @@ button {
 ul {
   list-style: none;
 }
-
-// img {
-//   width: 100%;
-//   height: 100%;
-// }
 
 .container {
   max-width: 1200px;
@@ -91,51 +86,82 @@ ul {
       rgba(255, 255, 255, 0) 100%
     );
 
-    .header-menu-items {
-      display: grid;
-      grid-template-columns: repeat(5, auto);
-      justify-content: space-around;
-      padding: 30px;
+    .header-menu {
+      .header-menu-items {
+        grid-template-columns: repeat(5, auto);
+        justify-content: space-around;
+        padding: 30px;
 
-      .header-menu-item {
-        font-family: OnestMedium, sans-serif;
-        font-size: 18px;
-        text-transform: uppercase;
+        .header-menu-item {
+          font-family: OnestMedium, sans-serif;
+          font-size: 18px;
+          text-transform: uppercase;
 
-        img {
-          width: 100%;
-        }
-
-        &.logo {
-          width: 123px;
-          height: 125px;
-          position: relative;
-          top: -21px;
-        }
-
-        a {
-          color: #000;
-          position: relative;
-
-          &::after {
-            content: "";
-            position: absolute;
-            bottom: -2px;
-            left: 50%;
-            width: 0%;
-            transform: translateX(-50%);
-            height: 2px;
-            background: #000;
-            transition: all 0.4s;
+          img {
+            width: 100%;
           }
 
-          &:hover {
-            &:after {
-              width: 100%;
+          &.logo {
+            width: 123px;
+            height: 125px;
+            position: relative;
+            top: -21px;
+          }
+
+          a {
+            color: #000;
+            position: relative;
+
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: -2px;
+              left: 50%;
+              width: 0%;
+              transform: translateX(-50%);
+              height: 2px;
+              background: #000;
+              transition: all 0.4s;
+            }
+
+            &:hover {
+              &:after {
+                width: 100%;
+              }
             }
           }
         }
+
+        &.desktop {
+          display: grid;
+        }
+
+        &.mobile {
+          display: none;
+        }
       }
+
+      .header-menu-close {
+        display: none;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .header-menu-logo {
+      display: none;
+      width: 30px;
+      height: 30px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .header-menu-burger {
+      display: none;
     }
   }
 
@@ -149,12 +175,13 @@ ul {
         .products-slider__item {
           display: flex;
           align-items: center;
+          justify-content: center;
 
           .products-slider__item-info {
             width: 378px;
             height: 443px;
             background: url("../assets/images/vector.png") no-repeat;
-            background-size: cover;
+            background-size: contain;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -184,8 +211,8 @@ ul {
           }
         }
         .products-slider__item-img {
-          width: 824px;
-          height: 654px;
+          max-width: 824px;
+          // max-height: 654px;
 
           img {
             width: 100%;
@@ -195,6 +222,7 @@ ul {
       }
 
       .arrow-btn {
+        width: 55px;
         position: absolute;
         background: transparent;
         top: calc(40% - 10px);
@@ -213,9 +241,10 @@ ul {
       .products-list__items {
         height: 183px;
         display: flex;
-        gap: 90px;
+        justify-content: space-between;
 
         .products-list__item {
+          width: 170px;
           display: flex;
           flex-direction: column;
           gap: 30px;
@@ -257,7 +286,7 @@ ul {
     background-color: #fff;
     background-image: url("../assets/images/bg-milk.png");
     background-position: center;
-    background-size: cover;
+    // background-size: cover;
     background-repeat: no-repeat;
     padding: 206px 0 285px 0;
 
@@ -368,12 +397,30 @@ ul {
       position: relative;
 
       .clients-slider__items {
-        display: flex;
         align-items: center;
         justify-content: space-evenly;
+
+        &.desktop {
+          display: flex;
+        }
+
+        &.mobile {
+          display: none;
+        }
+
+        &.mobile-small {
+          display: none;
+        }
+
+        .clients-slider__item {
+          &.hide {
+            display: none;
+          }
+        }
       }
 
       .arrow-btn {
+        width: 55px;
         position: absolute;
         background: transparent;
         top: calc(35% - 10px);
@@ -521,3 +568,5 @@ ul {
     }
   }
 }
+
+@import "./adaptive.scss";

@@ -15,7 +15,7 @@
         <header class="header" id="header">
             <section class="container">
                 <nav class="header-menu">
-                    <ul class="header-menu-items">
+                    <ul class="header-menu-items desktop">
                         <li class="header-menu-item">
                             <a href="#products">Продукция</a>
                         </li>
@@ -32,7 +32,50 @@
                             <a href="#contacts">Контакты</a>
                         </li>
                     </ul>
+                    <ul class="header-menu-items mobile">
+                        <li class="header-menu-item">
+                            <a href="#products">Продукция</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="#about">О нас</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="#clients">Где купить</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="#contacts">Контакты</a>
+                        </li>
+                    </ul>
+                    <section class="header-menu-close">
+                        <svg version="1.1" x="0px" y="0px" viewBox="0 0 492 492" fill="#fff"
+                            style="enable-background:new 0 0 492 492;" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M300.188,246L484.14,62.04c5.06-5.064,7.852-11.82,7.86-19.024c0-7.208-2.792-13.972-7.86-19.028L468.02,7.872
+                c-5.068-5.076-11.824-7.856-19.036-7.856c-7.2,0-13.956,2.78-19.024,7.856L246.008,191.82L62.048,7.872
+                c-5.06-5.076-11.82-7.856-19.028-7.856c-7.2,0-13.96,2.78-19.02,7.856L7.872,23.988c-10.496,10.496-10.496,27.568,0,38.052
+                L191.828,246L7.872,429.952c-5.064,5.072-7.852,11.828-7.852,19.032c0,7.204,2.788,13.96,7.852,19.028l16.124,16.116
+                c5.06,5.072,11.824,7.856,19.02,7.856c7.208,0,13.968-2.784,19.028-7.856l183.96-183.952l183.952,183.952
+                c5.068,5.072,11.824,7.856,19.024,7.856h0.008c7.204,0,13.96-2.784,19.028-7.856l16.12-16.116
+                c5.06-5.064,7.852-11.824,7.852-19.028c0-7.204-2.792-13.96-7.852-19.028L300.188,246z" />
+                                </g>
+                            </g>
+                        </svg>
+                    </section>
                 </nav>
+                <section class="header-menu-logo">
+                    <img src="./src/assets/images/logo.png" alt="Logo">
+                </section>
+                <section class="header-menu-burger" id="burger">
+                    <svg width="30px" height="22px" fill="#000">
+                        <path fill-rule="evenodd"
+                            d="M0.000,-0.000 L39.1000,-0.000 L39.1000,2.0000 L0.000,2.0000 L0.000,-0.000 Z" />
+                        <path fill-rule="evenodd"
+                            d="M0.000,10.000 L39.1000,10.000 L39.1000,12.000 L0.000,12.000 L0.000,12.000 Z" />
+                        <path fill-rule="evenodd"
+                            d="M0.000,20.0000 L39.1000,20.0000 L39.1000,22.0000 L0.000,22.0000 L0.000,22.0000 Z" />
+                    </svg>
+                </section>
             </section>
         </header>
 
@@ -52,14 +95,14 @@
                         </li>
                     </ul>
                     <button class="arrow-btn arrow-left">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none">
                             <circle cx="28" cy="28" r="27.5" transform="matrix(-1 0 0 1 56 0)" fill="#DE3A38"
                                 stroke="#D9D9D9" />
                             <path d="M33 39L19 28.5L33 18" stroke="white" stroke-width="3" />
                         </svg>
                     </button>
                     <button class="arrow-btn arrow-right">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none">
                             <circle cx="28" cy="28" r="27.5" fill="#DE3A38" stroke="#D9D9D9" />
                             <path d="M23 39L37 28.5L23 18" stroke="white" stroke-width="3" />
                         </svg>
@@ -136,11 +179,11 @@
             <section class="container">
                 <h2 class="clients-title">где купить?</h2>
                 <section class="clients-slider">
-                    <ul class="clients-slider__items">
+                    <ul class="clients-slider__items desktop">
                         <li class="clients-slider__item">
                             <img src="./src/assets/images/clients-slider/okey.png" alt="Окей">
                         </li>
-                        <li class="clients-slider__item">
+                        <li class="clients-slider__item big">
                             <img src="./src/assets/images/clients-slider/perekrestok.png" alt="Перекресток">
                         </li>
                         <li class="clients-slider__item">
@@ -153,15 +196,49 @@
                             <img src="./src/assets/images/clients-slider/slata.png" alt="Слата">
                         </li>
                     </ul>
+                    <ul class="clients-slider__items mobile">
+                        <li class="clients-slider__item">
+                            <img src="./src/assets/images/clients-slider/okey.png" alt="Окей">
+                        </li>
+                        <li class="clients-slider__item big">
+                            <img src="./src/assets/images/clients-slider/perekrestok.png" alt="Перекресток">
+                        </li>
+                        <li class="clients-slider__item">
+                            <img src="./src/assets/images/clients-slider/auchan.png" alt="Ашан">
+                        </li>
+                        <li class="clients-slider__item hide">
+                            <img src="./src/assets/images/clients-slider/lenta.png" alt="Лента">
+                        </li>
+                        <li class="clients-slider__item hide">
+                            <img src="./src/assets/images/clients-slider/slata.png" alt="Слата">
+                        </li>
+                    </ul>
+                    <ul class="clients-slider__items mobile-small">
+                        <li class="clients-slider__item">
+                            <img src="./src/assets/images/clients-slider/okey.png" alt="Окей">
+                        </li>
+                        <li class="clients-slider__item big hide">
+                            <img src="./src/assets/images/clients-slider/perekrestok.png" alt="Перекресток">
+                        </li>
+                        <li class="clients-slider__item hide">
+                            <img src="./src/assets/images/clients-slider/auchan.png" alt="Ашан">
+                        </li>
+                        <li class="clients-slider__item hide">
+                            <img src="./src/assets/images/clients-slider/lenta.png" alt="Лента">
+                        </li>
+                        <li class="clients-slider__item hide">
+                            <img src="./src/assets/images/clients-slider/slata.png" alt="Слата">
+                        </li>
+                    </ul>
                     <button class="arrow-btn arrow-left">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none">
                             <circle cx="28" cy="28" r="27.5" transform="matrix(-1 0 0 1 56 0)" fill="#DE3A38"
                                 stroke="#D9D9D9" />
                             <path d="M33 39L19 28.5L33 18" stroke="white" stroke-width="3" />
                         </svg>
                     </button>
                     <button class="arrow-btn arrow-right">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none">
                             <circle cx="28" cy="28" r="27.5" fill="#DE3A38" stroke="#D9D9D9" />
                             <path d="M23 39L37 28.5L23 18" stroke="white" stroke-width="3" />
                         </svg>
