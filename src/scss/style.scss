@@ -162,6 +162,7 @@ ul {
 
     .header-menu-burger {
       display: none;
+      cursor: pointer;
     }
   }
 
@@ -212,7 +213,6 @@ ul {
         }
         .products-slider__item-img {
           max-width: 824px;
-          // max-height: 654px;
 
           img {
             width: 100%;
@@ -286,7 +286,6 @@ ul {
     background-color: #fff;
     background-image: url("../assets/images/bg-milk.png");
     background-position: center;
-    // background-size: cover;
     background-repeat: no-repeat;
     padding: 206px 0 285px 0;
 
@@ -570,3 +569,4 @@ ul {
 }
 
 @import "./adaptive.scss";
+@import "./about.scss";
