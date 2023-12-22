@@ -1,4 +1,6 @@
+import '@splidejs/splide/css';
 import '../scss/style.scss';
+
 
 import sliderClienst from './modules/sliderClients';
 import menuModal from './modules/menuModal';

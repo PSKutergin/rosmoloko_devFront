@@ -39,6 +39,7 @@ body {
   grid-template-columns: minmax(320px, 1920px);
   grid-template-rows: auto auto 850px;
   justify-content: center;
+  background: #fcfaf9;
 }
 
 a {
@@ -283,6 +284,7 @@ ul {
 }
 
 .main {
+  height: max-content;
   .about {
     background-color: #fff;
     background-image: url("../assets/images/bg-milk.png");
@@ -383,53 +385,57 @@ ul {
     background: #fcfaf9;
     padding: 142px 0 80px 0;
 
-    .clients-title {
-      color: #000;
-      font-family: Intro, sans-serif;
-      font-size: 65px;
-      font-weight: 900;
-      text-transform: uppercase;
-      text-align: center;
-      margin-bottom: 50px;
-    }
+    .container {
+      .clients-title {
+        color: #000;
+        font-family: Intro, sans-serif;
+        font-size: 65px;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 50px;
+      }
 
-    .clients-slider {
-      position: relative;
-
-      .clients-slider__items {
-        align-items: center;
-        justify-content: space-evenly;
-
-        &.desktop {
+      .clients-slider {
+        .clients-slider__items {
+          height: 75px;
           display: flex;
-        }
+          align-items: center;
 
-        &.mobile {
-          display: none;
-        }
+          .clients-slider__item {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-        &.mobile-small {
-          display: none;
-        }
-
-        .clients-slider__item {
-          &.hide {
-            display: none;
+            img {
+              width: 80%;
+            }
           }
         }
       }
 
-      .arrow-btn {
-        width: 55px;
-        position: absolute;
-        background: transparent;
-        top: calc(35% - 10px);
-      }
-      .arrow-left {
-        left: -60px;
-      }
-      .arrow-right {
-        right: -60px;
+      .splide__arrows {
+        position: relative;
+        top: 35px;
+
+        .splide__arrow {
+          width: 35px;
+          height: 35px;
+          background: #de3a38;
+
+          svg {
+            fill: #fff;
+            width: 15px;
+            height: 15px;
+          }
+        }
+        .splide__arrow--prev {
+          left: -60px;
+        }
+        .splide__arrow--next {
+          right: -60px;
+        }
       }
     }
   }
