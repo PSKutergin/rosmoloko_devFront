@@ -10,24 +10,24 @@ const renderGoods = (url) => {
             if (item.id === 0) {
                 goodsList.insertAdjacentHTML('beforeend',
                     `
-                    <li class="products-list__item active">
-                        <img src="./src/assets/images/prodicts-list/${item.image}" alt="${item.name}">
+                    <li class="products-list__item wow flip active">
+                        <img src="./images/prodicts-list/${item.image}" alt="${item.name}">
                         <p>${item.name}</p>
                     </li>
                 `)
             } else if (item.name.toLowerCase() === 'кисломолочные напитки') {
                 goodsList.insertAdjacentHTML('beforeend',
                     `
-                    <li class="products-list__item small">
-                        <img src="./src/assets/images/prodicts-list/${item.image}" alt="${item.name}">
+                    <li class="products-list__item wow flip small">
+                        <img src="./images/prodicts-list/${item.image}" alt="${item.name}">
                         <p>${item.name}</p>
                     </li>
                 `)
             } else {
                 goodsList.insertAdjacentHTML('beforeend',
                     `
-                    <li class="products-list__item">
-                        <img src="./src/assets/images/prodicts-list/${item.image}" alt="${item.name}">
+                    <li class="products-list__item wow flip">
+                        <img src="./images/prodicts-list/${item.image}" alt="${item.name}">
                         <p>${item.name}</p>
                     </li>
                 `)

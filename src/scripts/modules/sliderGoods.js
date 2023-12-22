@@ -48,7 +48,7 @@ const sliderGoods = (url) => {
                         <button class="products-slider__item-btn button">Узнать подробнее</button>
                     </div>
                     <div class="products-slider__item-img">
-                        <img src="./src/assets/images/products-slider/${goods[numbersSlides].imageBig}" alt="Молоко">
+                        <img src="./images/products-slider/${goods[numbersSlides].imageBig}" alt="Молоко">
                     </div>
                 </li>
             `
