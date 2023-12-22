@@ -1,0 +1,51 @@
+[
+    {
+        "id": 0,
+        "name": "Молоко",
+        "description": "Вкусное и натуральное",
+        "image": "milk.png",
+        "imageBig": "milk.png"
+    },
+    {
+        "id": 1,
+        "name": "Сметана",
+        "description": "Вкусная и натуральная",
+        "image": "sourcream.png",
+        "imageBig": "milk.png"
+    },
+    {
+        "id": 2,
+        "name": "Творог",
+        "description": "Вкусный и натуральный",
+        "image": "cottage.png",
+        "imageBig": "milk.png"
+    },
+    {
+        "id": 3,
+        "name": "Кефир",
+        "description": "Вкусный и натуральный",
+        "image": "kefir.png",
+        "imageBig": "milk.png"
+    },
+    {
+        "id": 4,
+        "name": "Йогурт",
+        "description": "Вкусный и натуральный",
+        "image": "yogurt.png",
+        "imageBig": "milk.png"
+    },
+    {
+        "id": 5,
+        "name": "Сливки",
+        "description": "Вкусные и натуральные",
+        "image": "cream.png",
+        "imageBig": "milk.png"
+    },
+    {
+        "id": 6,
+        "name": "Кисломолочные напитки",
+        "description": "Вкусные и натуральные",
+        "image": "milk-beverages.png",
+        "imageBig": "milk.png"
+    }
+]
