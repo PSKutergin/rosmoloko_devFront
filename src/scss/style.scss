@@ -241,9 +241,9 @@ ul {
       padding-top: 85px;
 
       .products-list__items {
-        height: 183px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
 
         .products-list__item {
           width: 170px;
@@ -252,6 +252,7 @@ ul {
           gap: 30px;
           justify-content: flex-end;
           align-items: center;
+          margin-bottom: 15px;
 
           img {
             height: 123px;

@@ -11,7 +11,7 @@ const renderGoods = (url) => {
                 goodsList.insertAdjacentHTML('beforeend',
                     `
                     <li class="products-list__item wow flip active">
-                        <img src="./images/prodicts-list/${item.image}" alt="${item.name}">
+                        <img src="${item.image}" alt="${item.name}">
                         <p>${item.name}</p>
                     </li>
                 `)
@@ -19,7 +19,7 @@ const renderGoods = (url) => {
                 goodsList.insertAdjacentHTML('beforeend',
                     `
                     <li class="products-list__item wow flip small">
-                        <img src="./images/prodicts-list/${item.image}" alt="${item.name}">
+                        <img src="${item.image}" alt="${item.name}">
                         <p>${item.name}</p>
                     </li>
                 `)
@@ -27,7 +27,7 @@ const renderGoods = (url) => {
                 goodsList.insertAdjacentHTML('beforeend',
                     `
                     <li class="products-list__item wow flip">
-                        <img src="./images/prodicts-list/${item.image}" alt="${item.name}">
+                        <img src="${item.image}" alt="${item.name}">
                         <p>${item.name}</p>
                     </li>
                 `)
