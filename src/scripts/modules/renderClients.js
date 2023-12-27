@@ -23,7 +23,6 @@ const renderClients = (url) => {
     getData(url)
         .then(data => {
             renderData(data);
-            console.log(data);
         })
         .catch(error => {
             console.log(error.message);

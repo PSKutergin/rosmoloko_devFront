@@ -576,5 +576,67 @@ ul {
   }
 }
 
+.popup {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  display: flex;
+
+  &.hide {
+    display: none;
+  }
+
+  .popup-content {
+    position: relative;
+
+    .popup-product {
+      width: 420px;
+      padding: 30px;
+      border-radius: 20px;
+      background: #fff;
+      box-shadow: 0px 10px 100px 0px rgba(0, 0, 0, 0.58);
+      transition: all 1s;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 15px;
+
+      .popup-product-title {
+        color: #000;
+        font-family: Intro, sans-serif;
+        font-size: 40px;
+        font-weight: 900;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        text-align: center;
+      }
+
+      .popup-product-description {
+        color: #000;
+        font-family: Onest, sans-serif;
+        font-size: 26px;
+        text-align: center;
+      }
+    }
+
+    .popup-close {
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      cursor: pointer;
+    }
+  }
+}
+
 @import "./adaptive.scss";
 @import "./about.scss";

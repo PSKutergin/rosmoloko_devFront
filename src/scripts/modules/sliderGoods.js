@@ -4,7 +4,7 @@ const sliderGoods = (url) => {
     const productsSlider = document.querySelector('.products-slider');
     const productsSliderContainer = productsSlider.querySelector('.products-slider__items');
     const goodsList = document.getElementById('goods-list');
-    const timeInterval = 2000;
+    const timeInterval = 4000;
 
     let goods;
     let currentSlide = 0;
@@ -23,7 +23,7 @@ const sliderGoods = (url) => {
         slider(goods, currentSlide);
     };
 
-    const startSlide = (timer = 1500) => {
+    const startSlide = (timer = 3000) => {
         interval = setInterval(autoSlide, timer);
     };
 
@@ -42,7 +42,7 @@ const sliderGoods = (url) => {
         productsSliderContainer.insertAdjacentHTML('beforeend',
             `
                 <li class="products-slider__item">
-                    <div class="products-slider__item-info">
+                    <div class="products-slider__item-info" data-key="${goods[numbersSlides].id}">
                         <h2 class="products-slider__item-title">${goods[numbersSlides].name}</h2>
                         <p class="products-slider__item-text">${goods[numbersSlides].description}</p>
                         <button class="products-slider__item-btn button">Узнать подробнее</button>
@@ -80,13 +80,13 @@ const sliderGoods = (url) => {
     });
 
     productsSlider.addEventListener('mouseenter', (e) => {
-        if (e.target.matches('.arrow-btn')) {
+        if (e.target.matches('.arrow-btn') || e.target.matches('.products-slider__item-btn')) {
             stopSlide()
         };
     }, true);
 
     productsSlider.addEventListener('mouseleave', (e) => {
-        if (e.target.matches('.arrow-btn')) {
+        if (e.target.matches('.arrow-btn') || e.target.matches('.products-slider__item-btn')) {
             startSlide(timeInterval)
         };
     }, true);
